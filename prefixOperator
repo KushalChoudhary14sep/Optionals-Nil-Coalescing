@@ -1,0 +1,33 @@
+import UIKit
+
+prefix operator /
+  prefix func /(str: Substring?) -> String{
+    return String(str ?? "")
+}
+  prefix func /(str: Int64?) -> Int64{
+    return str ?? Int64(0)
+}
+  prefix func /(str: String?) -> String {
+    return str ?? ""
+}
+  prefix func /(str: Int?) -> Int {
+    return str ?? 0
+}
+  prefix func /(str: Bool?) -> Bool {
+    return str ?? false
+}
+  prefix func /(str: Double?) -> Double {
+    return str ?? 0.0
+}
+
+  prefix func /(str: Float?) -> Float {
+    return str ?? 0.0
+}
+
+  prefix func /(str: CGFloat?) -> CGFloat {
+    return str ?? 0.0
+}
+
+  prefix func /(str: URL?) -> URL {
+    return str ?? URL(fileURLWithPath: "")
+}
